@@ -1,136 +1,93 @@
 <div align="center">
-<h1>
-⚡ CodePilot
-</h1>
-<p>
-<strong>
-An AI-powered code generation tool that helps you build web apps faster using natural language.
-</strong>
-</p>
-<p>
-Describe what you want to build, and CodePilot instantly generates working code directly in your browser.
-</p>
-<br />
-<p>
-<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" />
-<img src="https://img.shields.io/badge/pnpm-v9.x-orange.svg" alt="pnpm" />
-<img src="https://img.shields.io/badge/React-v18.x-blue.svg" alt="React" />
-<img src="https://img.shields.io/badge/Node.js-v18.x-green.svg" alt="Node.js" />
-</p>
+  <h1>⚡ CodePilot</h1>
+  <p><strong>An AI-powered code generation tool that helps you build web apps faster using natural language.</strong></p>
+  <p>Describe what you want to build, and CodePilot instantly generates working code directly in your browser.</p>
+  <br />
+  <p>
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" />
+    <img src="https://img.shields.io/badge/pnpm-v9.x-orange.svg" alt="pnpm" />
+    <img src="https://img.shields.io/badge/React-v18.x-blue.svg" alt="React" />
+    <img src="https://img.shields.io/badge/Node.js-v18.x-green.svg" alt="Node.js" />
+  </p>
 </div>
 
-📖 Table of Contents
+---
 
-✨ Features
+## 📖 Table of Contents
+- ✨ [Features](#-features)
+- 🛠️ [Tech Stack](#️-tech-stack)
+- 🚀 [Getting Started](#-getting-started)
+- 🐳 [Docker Deployment](#-docker-deployment)
+- 🧩 [Project Structure](#-project-structure)
+- 💡 [Future Improvements](#-future-improvements)
+- 🏷️ [License](#️-license)
 
-🛠️ Tech Stack
+---
 
-🚀 Getting Started
+## ✨ Features
+- 🧠 **AI-Powered:** Generate code from simple, natural language text prompts.  
+- ⚡ **Real-time Preview:** Instantly see a live preview of the generated code.  
+- 🎨 **Modern UI:** Built with React, TypeScript, and TailwindCSS for a sleek, responsive interface.  
+- 💾 **No Setup Required:** Works directly in the browser — no installation needed.  
+- 🐳 **Docker Support:** Easily deploy your own instance with the included Dockerfile.  
+- 🔗 **Open Source:** Fully customizable and free to use.
 
-🐳 Docker Deployment
+---
 
-🧩 Project Structure
+## 🛠️ Tech Stack
 
-💡 Future Improvements
+| Area | Technology |
+|------|-------------|
+| Frontend | React (Vite + TypeScript) |
+| Backend | Node.js (Runtime) |
+| Styling | TailwindCSS |
+| AI Engine | Bolt SDK / OpenAI |
+| Build | Vite |
+| Package | pnpm |
+| Container | Docker |
 
-🏷️ License
+---
 
-✨ Features
-
-🧠 AI-Powered: Generate code from simple, natural language text prompts.
-
-⚡ Real-time Preview: Instantly see a live preview of the code you generate.
-
-🎨 Modern UI: Built with React, TypeScript, and TailwindCSS for a sleek, responsive interface.
-
-💾 No Setup Required: Works directly in the browser—no complex installation needed.
-
-🐳 Docker Support: Easily deploy your own instance with the included Dockerfile.
-
-🔗 Open-Source: Fully open-source and customizable to fit your needs.
-
-🛠️ Tech Stack
-
-Area
-
-Technology
-
-Frontend
-
-React (Vite + TypeScript)
-
-Backend
-
-Node.js (Runtime)
-
-Styling
-
-TailwindCSS
-
-AI Engine
-
-Bolt SDK / OpenAI
-
-Build
-
-Vite
-
-Package
-
-pnpm
-
-Container
-
-Docker
-
-🚀 Getting Started
+## 🚀 Getting Started
 
 Follow these steps to get a local copy up and running.
 
-Clone the repository:
-
-git clone [https://github.com/Dhruv0140/CodePilot.git](https://github.com/Dhruv0140/CodePilot.git)
-
-
-Navigate to the project directory:
-
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Dhruv0140/CodePilot.git
 cd CodePilot
+```
 
-
-Install dependencies:
-(Using pnpm as specified in the tech stack)
-
+### 2️⃣ Install dependencies
+```bash
 pnpm install
-
-
-Run the development server:
-
+```
+### 3️⃣ Run the development server
+```bash
 pnpm dev
+```
+
+### 4️⃣ Open your browser
+Visit http://localhost:5173
 
 
-Open your browser:
-Navigate to http://localhost:5173.
-
-🐳 Docker Deployment
+## 🐳 Docker Deployment
 
 You can also run CodePilot using Docker for a self-contained environment.
 
-Build the Docker image:
-
+### 1️⃣ Build the Docker image
+```bash
 docker build -t codepilot .
-
-
-Run the container:
-
+```
+### 2️⃣ Run the container
+```bash
 docker run -d -p 5173:5173 codepilot
+```
+### 3️⃣ Open your browser
+```bash
+Once running, visit http://localhost:5173
 
-
-Open your browser:
-Once running, navigate to http://localhost:5173.
-
-Example Dockerfile
-
-Here is the Dockerfile used for the build:
+### 🧱 Example Dockerfile
 
 # Use an official Node.js runtime as a parent image
 FROM node:18-alpine
@@ -155,12 +112,10 @@ EXPOSE 5173
 
 # Define the command to run the app
 CMD ["pnpm", "preview", "--host"]
+```
 
-
-🧩 Project Structure
-
-Here is an overview of the project's file structure:
-
+## 🧩 Project Structure
+``` text
 CodePilot/
 │
 ├── src/
@@ -178,18 +133,18 @@ CodePilot/
 ├── pnpm-lock.yaml    # Lockfile for pnpm
 ├── README.md         # You are here!
 └── tsconfig.json     # TypeScript configuration
+```
 
+##💡 Future Improvements
 
-💡 Future Improvements
+   Add support for more AI models (e.g., Gemini, Claude)
 
-[ ] Add support for more AI models (e.g., Gemini, Claude).
+   Enable saving and downloading of generated projects
 
-[ ] Enable saving and downloading of generated projects.
+   Implement user authentication and cloud-based project storage
 
-[ ] Implement user authentication and cloud-based project storage.
+   Continuously improve code generation accuracy and speed
 
-[ ] Continuously improve code generation accuracy and speed.
-
-🏷️ License
+## 🏷️ License
 
 This project is for academic and learning purposes.
