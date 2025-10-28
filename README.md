@@ -134,6 +134,10 @@ CodePilot/
 ├── README.md         # You are here!
 └── tsconfig.json     # TypeScript configuration
 ```
+## 💻 project workflow 
+<img width="5656" height="3644" alt="diagram" src="https://github.com/user-attachments/assets/626f6997-f313-4664-8f5e-d9e0df3614cc" />
+
+
 ## 💡 Future Improvements
 
    Add support for more AI models (e.g., Gemini, Claude)
