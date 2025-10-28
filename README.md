@@ -88,7 +88,7 @@ docker run -d -p 5173:5173 codepilot
 Once running, visit http://localhost:5173
 ```
 ### 🧱 Example Dockerfile
-
+```
 # Use an official Node.js runtime as a parent image
 FROM node:18-alpine
 
