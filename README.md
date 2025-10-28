@@ -86,7 +86,7 @@ docker run -d -p 5173:5173 codepilot
 ### 3️⃣ Open your browser
 ```bash
 Once running, visit http://localhost:5173
-
+```
 ### 🧱 Example Dockerfile
 
 # Use an official Node.js runtime as a parent image
