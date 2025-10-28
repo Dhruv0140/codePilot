@@ -134,8 +134,7 @@ CodePilot/
 ├── README.md         # You are here!
 └── tsconfig.json     # TypeScript configuration
 ```
-
-##💡 Future Improvements
+## 💡 Future Improvements
 
    Add support for more AI models (e.g., Gemini, Claude)
 
